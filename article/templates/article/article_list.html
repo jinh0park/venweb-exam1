@@ -1,0 +1,14 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+    <h1>Articles</h1>
+    {% if article_list %}
+        <ul class="list-group">
+            {% for article in article_list %}
+                <li class="list-group-item"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There is no article.</p>
+    {% endif %}
+{% endblock %}

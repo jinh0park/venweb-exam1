@@ -1,0 +1,38 @@
+{% extends 'article/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <h1>About Us</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>Pororo the Little Penguin (Japanese: ポロロ; Korean: 뽀롱뽀롱 뽀로로) is a computer animated television series
+                created by ICONIX Entertainment, SK Broadband, OCON, EBS and Channel One with the animation done by
+                Studio Gail and rendered by Seoul Animation Center (formerly with the North Korean company Samchŏlli
+                in Kaesong from season 1~2) Production began in 2002 and the program began airing in South Korea on
+                EBS in 2003.</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p><b>Pororo</b> (Voiced by Lee Seon) is the main protagonist of the series.</p>
+            <img src="{% static 'images/pororo.jpg' %}">
+        </div>
+        <div class="col-md-4">
+            <p><b>Crong</b> (Voiced by Lee Mi-ja) is a baby dinosaur and the youngest of the group and got adopted by Pororo.
+                Unlike other characters, he speak his own language, "Crong~," but sometimes he use human words when he
+                needs them.</p>
+            <img src="{% static 'images/crong.jpg' %}">
+        </div>
+        <div class="col-md-4">
+            <p><b>Poby</b> (Voiced by Kim Hwan-jin) is a polar bear with a big heart.</p>
+            <img src="{% static 'images/poby.jpg' %}">
+        </div>
+    </div>
+
+{% endblock %}
